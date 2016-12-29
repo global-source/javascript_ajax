@@ -57,6 +57,15 @@ var ajax = {
         query.push(encodeURIComponent(key) + '=' + encodeURIComponent(data[key]));
     }
     this.send(url, callback, 'POST', query.join('&'), async)
-}
+   },
+    
+    // For CROS-Domain : JSONP Request.
+   jsonp: function (url) {
+        url = url + '?callback=my_callback_method';
+        var script = document.createElement('script');
+        script.src = url;
+
+        document.getElementsByTagName('head')[0].appendChild(script);
+    }
 
 };
