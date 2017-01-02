@@ -31,12 +31,12 @@ Collection of Ajax requests via Javascript.
      
 ##### Overall Example:
 
-   <script src="./javascript_ajax.js"> </script>
-   <script>
-      ajax.get('/path/to/handle/', {foo: 'bar'}, function(response) {
+    <script src="./javascript_ajax.js"> </script>
+    <script>
+       ajax.get('/path/to/handle/', {foo: 'bar'}, function(response) {
       
-         // Function to Handle Response.
-         console.log(response);
+           // Function to Handle Response.
+           console.log(response);
          
-      });
+       });
     </script>
