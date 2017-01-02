@@ -29,4 +29,7 @@ Collection of Ajax requests via Javascript.
 #### CALLBACK:
     Function to handle request after the request.
      
-
+##### Overall Example:
+    ajax.get('/path/to/handle/', {foo: 'bar'}, function() {
+       // CALLBACK 
+    });
