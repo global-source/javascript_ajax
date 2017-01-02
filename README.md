@@ -30,6 +30,13 @@ Collection of Ajax requests via Javascript.
     Function to handle request after the request.
      
 ##### Overall Example:
-    ajax.get('/path/to/handle/', {foo: 'bar'}, function() {
-       // CALLBACK 
-    });
+
+   <script src="./javascript_ajax.js"> </script>
+   <script>
+      ajax.get('/path/to/handle/', {foo: 'bar'}, function(response) {
+      
+         // Function to Handle Response.
+         console.log(response);
+         
+      });
+    </script>
