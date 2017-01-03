@@ -33,10 +33,29 @@ Collection of Ajax requests via Javascript.
 
     <script src="./javascript_ajax.js"> </script>
     <script>
+    
+       // GET Request.
        ajax.get('/path/to/handle/', {foo: 'bar'}, function(response) {
       
            // Function to Handle Response.
            console.log(response);
          
        });
+       
+       // POST Request.
+       ajax.post('/path/to/handle/', {foo: 'bar'}, function(response) {
+      
+           // Function to Handle Response.
+           console.log(response);
+         
+       });
+       
+       // JSONP Request.
+       ajax.jsonp('/path/to/handle/', {foo: 'bar'}, function(response) {
+      
+           // Function to Handle Response.
+           console.log(response);
+         
+       });       
+       
     </script>
