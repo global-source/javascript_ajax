@@ -12,12 +12,14 @@ Collection of Ajax requests via Javascript.
 
 ## Installation
   
-      <script src="./javascript_ajax.js"> </script>
+      <script src="/path/to/javascript_ajax.js"> </script>
       
 ## Using Library
  
      ajax.get(URL, DATA, CALLBACK);
+     
      ajax.post(URL, DATA, CALLBACK);
+     
      ajax.jsonp(URL, DATA, CALLBACK);
      
 #### URL:
@@ -34,7 +36,7 @@ Collection of Ajax requests via Javascript.
     <script src="./javascript_ajax.js"> </script>
     <script>
     
-       // GET Request.
+       /** GET Request. */
        ajax.get('/path/to/handle/', {foo: 'bar'}, function(response) {
       
            // Function to Handle Response.
@@ -42,7 +44,7 @@ Collection of Ajax requests via Javascript.
          
        });
        
-       // POST Request.
+       /** POST Request. */
        ajax.post('/path/to/handle/', {foo: 'bar'}, function(response) {
       
            // Function to Handle Response.
@@ -50,7 +52,7 @@ Collection of Ajax requests via Javascript.
          
        });
        
-       // JSONP Request.
+       /** JSONP Request. */
        ajax.jsonp('/path/to/handle/', {foo: 'bar'}, function(response) {
       
            // Function to Handle Response.
