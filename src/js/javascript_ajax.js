@@ -4,6 +4,8 @@ var ajax = {
     if (typeof XMLHttpRequest !== 'undefined') {
         return new XMLHttpRequest();
     }
+        
+        // Various Http Versions.
     var versions = [
         "MSXML2.XmlHttp.6.0",
         "MSXML2.XmlHttp.5.0",
@@ -13,6 +15,7 @@ var ajax = {
         "Microsoft.XmlHttp"
     ];
 
+        // Ajax Instance.
     var xhr;
     for (var i = 0; i < versions.length; i++) {
         try {
@@ -24,6 +27,7 @@ var ajax = {
     return xhr;
    },
 
+    // Init Sending Process.
   send:function (url, callback, method, data, async) {
     if (async === undefined) {
         async = true;
