@@ -6,9 +6,9 @@ Collection of Ajax requests via Javascript.
 
 **This library will support to implement** :
  
-      - GET 
-      - POST
-      - JSONP
+      - i)   GET 
+      - ii)  POST
+      - iii) JSONP
 
 ## Installation
   
@@ -16,11 +16,11 @@ Collection of Ajax requests via Javascript.
       
 ## Using Library
  
-     ajax.get(URL, DATA, CALLBACK);
+     i)   ajax.get(URL, DATA, CALLBACK);
      
-     ajax.post(URL, DATA, CALLBACK);
+     ii)  ajax.post(URL, DATA, CALLBACK);
      
-     ajax.jsonp(URL, DATA, CALLBACK);
+     iii) ajax.jsonp(URL, DATA, CALLBACK);
      
 #### URL:
     Action URL to handle request.
