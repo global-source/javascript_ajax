@@ -64,8 +64,11 @@ var ajax = {
    },
     
     // For CROS-Domain : JSONP Request.
-   jsonp: function (url) {
-        url = url + '?callback=my_callback_method';
+   jsonp: function (url,callback) {
+       // Manual callback functuion,
+       if(typeof callback === 'undefined') callback = 'my_callback_method';
+       // Formed url with callback.
+        url = url + '?callback=' + callback;
         var script = document.createElement('script');
         script.src = url;
 
